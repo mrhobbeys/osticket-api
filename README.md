@@ -32,7 +32,7 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/mrhobbeys/osticket-api.git
+   git clone https://github.com/BMSVierira/osticket-api.git
    cd osticket-api
    ```
 
@@ -86,7 +86,7 @@ All API requests require authentication via API key in the request header:
 
 ```
 Content-Type: application/json
-ApiKey: your-32-character-api-key-here
+ApiKey: your-32--character--api-key-here
 ```
 
 ### Permission Levels
@@ -213,7 +213,7 @@ curl -X POST https://your-domain.com/ost_wbs/ \
       "default_email_id": "1",
       "status": "1",
       "timezone": "America/New_York",
-      "password": "securepassword123"
+      "password": "Securepassword123!"
     }
   }'
 ```
