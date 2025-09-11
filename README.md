@@ -32,7 +32,7 @@
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/mrhobbeys/osticket-api.git
+   git clone https://github.com/BMSVieira/osticket-api.git
    cd osticket-api
    ```
 
@@ -86,7 +86,7 @@ All API requests require authentication via API key in the request header:
 
 ```
 Content-Type: application/json
-ApiKey: your-32-character-api-key-here
+ApiKey: your-32--character--api-key-here
 ```
 
 ### Permission Levels
@@ -138,7 +138,7 @@ All requests use JSON format with the following structure:
 |--------|------|-------------|-------------------|
 | `all` | GET | List users by date range | `start_date`, `end_date` |
 | `specific` | GET | Get specific user | `id` or `email` |
-| `add` | POST/PUT | Create new user | `name`, `email`, `phone`, `org_id`, `default_email_id`, `status`, `timezone`, `password` |
+| `add` | POST/PUT | Create new user | `name`, `email`, `phone`, `org_id`, `default_email_id`, `status`, `timezone`, `word` |
 
 #### 🏢 Departments
 | Method | HTTP | Description | Required Parameters |
@@ -184,7 +184,7 @@ All requests use JSON format with the following structure:
 ```bash
 curl -X GET https://your-domain.com/ost_wbs/ \
   -H "Content-Type: application/json" \
-  -H "ApiKey: your-api-key-here" \
+  -H "ApiKey: your-32--character--api-key-here" \
   -d '{
     "query": "ticket",
     "condition": "all",
@@ -201,7 +201,7 @@ curl -X GET https://your-domain.com/ost_wbs/ \
 ```bash
 curl -X POST https://your-domain.com/ost_wbs/ \
   -H "Content-Type: application/json" \
-  -H "ApiKey: your-api-key-here" \
+  -H "ApiKey: your-32--character--api-key-here" \
   -d '{
     "query": "user",
     "condition": "add",
@@ -213,7 +213,7 @@ curl -X POST https://your-domain.com/ost_wbs/ \
       "default_email_id": "1",
       "status": "1",
       "timezone": "America/New_York",
-      "password": "securepassword123"
+      "password": "Securepassword123!"
     }
   }'
 ```
@@ -222,7 +222,7 @@ curl -X POST https://your-domain.com/ost_wbs/ \
 ```bash
 curl -X POST https://your-domain.com/ost_wbs/ \
   -H "Content-Type: application/json" \
-  -H "ApiKey: your-api-key-here" \
+  -H "ApiKey: your-32--character--api-key-here" \
   -d '{
     "query": "ticket",
     "condition": "add",
@@ -243,7 +243,7 @@ curl -X POST https://your-domain.com/ost_wbs/ \
 ```bash
 curl -X GET https://your-domain.com/ost_wbs/ \
   -H "Content-Type: application/json" \
-  -H "ApiKey: your-api-key-here" \
+  -H "ApiKey: your-32--character--api-key-here" \
   -d '{
     "query": "ticket",
     "condition": "specific",
@@ -257,7 +257,7 @@ curl -X GET https://your-domain.com/ost_wbs/ \
 ```bash
 curl -X GET https://your-domain.com/ost_wbs/ \
   -H "Content-Type: application/json" \
-  -H "ApiKey: your-api-key-here" \
+  -H "ApiKey: your-32--character--api-key-here" \
   -d '{
     "query": "department",
     "condition": "all",
@@ -269,7 +269,7 @@ curl -X GET https://your-domain.com/ost_wbs/ \
 ```bash
 curl -X GET https://your-domain.com/ost_wbs/ \
   -H "Content-Type: application/json" \
-  -H "ApiKey: your-api-key-here" \
+  -H "ApiKey: your-32--character--api-key-here" \
   -d '{
     "query": "tasks",
     "condition": "all",
